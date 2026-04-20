@@ -1,0 +1,29 @@
+train_jsonl: /path/to/castella_train.jsonl
+feature_root: /path/to/features
+output_dir: /path/to/stage_a_run
+audio_hz: 1
+epochs: 15
+batch_size: 32
+num_workers: 4
+learning_rate: 1.0e-4
+weight_decay: 0.01
+hidden_dim: 768
+dropout: 0.1
+dilations: [1, 2, 4]
+delta_loss_weight: 0.2
+align_loss_weight: 0.3
+usage_loss_weight: 0.05
+temperature: 0.07
+saliency_pos_weight: 4.0
+boundary_pos_weight: 6.0
+boundary_radius: 1
+num_codebooks: 8
+codebook_size: 1024
+sample_frames: 250000
+foreground_ratio: 0.45
+boundary_ratio: 0.20
+per_row_pos_cap: 64
+per_row_boundary_cap: 32
+per_row_neg_cap: 128
+seed: 42
+
